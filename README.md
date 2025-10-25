@@ -1,25 +1,30 @@
 # ChessBoard 2.0
 
-A console application that renders a chessboard pattern.
+A C# program that generates an N×N chessboard in the console.
 
-## Getting Started
+## How to run the program
 
-### Clone the Repository
-```bash
-git clone https://github.com/exikoz/ChessBoard2.0.git
-cd ChessBoard2.0
+### Prerequisites
+- Visual Studio 2022 or later
+- .NET 8.0
+
+### Steps to run:
+
+1. Open Visual Studio 2022
+
+2. Click on **"Clone a repository"**
+
+3. Paste the repository URL:
+```
+https://github.com/exikoz/ChessBoard2.0.git
 ```
 
-## How to Run
+4. Click **"Clone"**
 
-### Option 1: Using Visual Studio
-1. Open `ChessBoard2.0.csproj` in Visual Studio
-2. Press `F5` or click the green "Start" button
+5. When the project opens, press `F5` or click the green Start button
+or in the terminal run `dotnet run`
 
-### Option 2: Using Command Line
-```bash
-dotnet run
-```
+6. Follow the instructions in the console and enter a number between 3-50
 
 ## Usage
 
@@ -29,10 +34,11 @@ When you run the program:
 3. Black squares: ◼︎
 4. White squares: ◻︎
 
-### Example
-```
+
+## Example
 Input chessboard size, whole number (3-50)
-5
+Input: 5
+```
 ◼︎◻︎◼︎◻︎◼︎
 ◻︎◼︎◻︎◼︎◻︎
 ◼︎◻︎◼︎◻︎◼︎
@@ -40,6 +46,6 @@ Input chessboard size, whole number (3-50)
 ◼︎◻︎◼︎◻︎◼︎
 ```
 
-## Requirements
+## Author
 
-- .NET 8.0 or later
+Hussein Hasnawy

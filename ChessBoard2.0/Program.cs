@@ -1,5 +1,5 @@
 ﻿/*
- * AI Tool: Claude (Anthropic)
+ * AI Tool: Claude Sonnet 4.5 (Anthropic)
  * 
  * Question: "How should I think about solving nested pattern problems?"
  * Answer: AI suggested thinking about row+column relationships

@@ -1,4 +1,13 @@
-﻿namespace ChessBoard2._0
+﻿/*
+ * AI Tool: Claude (Anthropic)
+ * 
+ * Question: "How should I think about solving nested pattern problems?"
+ * Answer: AI suggested thinking about row+column relationships
+ * My modification: I already knew about nested loops and modulo,
+ * but AI helped me realize the key insight: (row + col) % 2 determines the pattern
+ * 
+ */
+namespace ChessBoard2._0
 {
     internal class Program
     {

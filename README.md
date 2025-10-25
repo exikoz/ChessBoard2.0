@@ -1,36 +1,38 @@
 # ChessBoard 2.0
 
-Ett C#-program som genererar ett N×N schackbräde i konsolen.
+A console application that renders a chessboard pattern.
 
-## Beskrivning
+## Getting Started
 
-Programmet låter användaren mata in en storlek (3-50) och skriver sedan ut ett schackbräde med svarta ◼︎) och vita (◻︎) rutor i ett klassiskt schackbrädesmönster.
-
-## Hur man kör programmet
-
-### Förutsättningar
-- Visual Studio 2022 eller senare
-- .NET 8.0
-
-### Steg för att köra:
-
-1. Klona repositoryt:
+### Clone the Repository
 ```bash
 git clone https://github.com/exikoz/ChessBoard2.0.git
+cd ChessBoard2.0
 ```
 
-2. Öppna `ChessBoard2.0.sln` i Visual Studio
+## How to Run
 
-3. Tryck på `F5` eller klicka på "Start" för att köra programmet
+### Option 1: Using Visual Studio
+1. Open `ChessBoard2.0.csproj` in Visual Studio
+2. Press `F5` or click the green "Start" button
 
-4. Följ instruktionerna i konsolen:
-   - Ange en siffra mellan 3 och 50
-   - Schackbrädet kommer att visas
-
-## Exempel
-
-### Input: 5
+### Option 2: Using Command Line
+```bash
+dotnet run
 ```
+
+## Usage
+
+When you run the program:
+1. Enter a number between 3 and 50
+2. The program will display a chessboard of that size
+3. Black squares: ◼︎
+4. White squares: ◻︎
+
+### Example
+```
+Input chessboard size, whole number (3-50)
+5
 ◼︎◻︎◼︎◻︎◼︎
 ◻︎◼︎◻︎◼︎◻︎
 ◼︎◻︎◼︎◻︎◼︎
@@ -38,29 +40,6 @@ git clone https://github.com/exikoz/ChessBoard2.0.git
 ◼︎◻︎◼︎◻︎◼︎
 ```
 
-## Teknisk implementation
+## Requirements
 
-Programmet använder:
-- **Validering**: `int.TryParse()` för säker input-hantering
-- **Mönster**: `(row + col) % 2` för att växla mellan svarta och vita rutor
-- **Unicode-stöd**: `Console.OutputEncoding` för korrekta tecken
-
-## AI-användning
-
-Under utvecklingen användes **Claude** för:
-- Hjälp med input-validering och `TryParse()`
-- Förklaring av modulo-operator för schackbrädesmönster
-- Tips om Unicode-stöd i C#-konsolen
-
-## Struktur
-```
-ChessBoard2.0/
-├── ChessBoard2.0.sln
-├── README.md
-└── ChessBoard2.0/
-    └── Program.cs
-```
-
-## Författare
-
-Hussein Hasnawy
+- .NET 8.0 or later
